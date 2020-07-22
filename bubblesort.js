@@ -18,7 +18,8 @@ let swap = (inputArr, index) => {
     let tmp = inputArr[index];
     inputArr[index] = inputArr[index + 1];
     inputArr[index + 1] = tmp;
-    return inputArr     
+         
   }
+  return inputArr
 }
 
