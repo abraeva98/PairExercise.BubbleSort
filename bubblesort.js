@@ -1,19 +1,24 @@
-function bubbleSort(array) {
-const newArr = []
 
-//  for(let i=0; i<array.length; i++) {
-//     let curVal = array.slice(i,i+2) 
-//     console.log(curVal)
-//  }
-
-// for(let i=0; i<array.length; i++){
-//     for(let j=0; i<array.length; j++) {
-//         if(array[j] > array[j+1]){
-//             let current = array[j]
-//             array[j] = array[j+1]
-//             array[j+1] = current
-//         }
-//     }
-// }
-// return array
+let bubbleSort = (inputArr) => {
+  let len = inputArr.length;
+  for (let i = 0; i < len; i++) {
+      for (let j = 0; j < len; j++) {
+  
+           swap(inputArr, j)
+           
+      }
   }
+//  console.log(num)
+  return inputArr;
+
+};
+
+let swap = (inputArr, index) => {
+  if (inputArr[index] > inputArr[index + 1]) {
+    let tmp = inputArr[index];
+    inputArr[index] = inputArr[index + 1];
+    inputArr[index + 1] = tmp;
+    return inputArr     
+  }
+}
+
